@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: web-calcu
+  namespace: default
+spec:
+  replicas: 2 # Number of replicas
+  selector:
+    matchLabels:
+      app: web-calcu
+  template:
+    metadata:
+      labels:
+        app: web-calcu
+    spec:
+      containers:
+        - name: web-calcu
+          image: asif1008/repo1:v1
+          ports:
+            - containerPort: 80  # Port 80

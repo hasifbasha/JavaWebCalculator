@@ -10,3 +10,4 @@ spec:
   - protocol: TCP
     port: 80          # This is the port exposed to the outside world
     targetPort: 80
+    nodePort: 32111

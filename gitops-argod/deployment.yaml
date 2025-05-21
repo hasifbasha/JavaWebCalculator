@@ -17,4 +17,4 @@ spec:
         - name: web-calcu
           image: asif1008/repo1:v1
           ports:
-            - containerPort: 80  # Port 80
+            - containerPort: 8080 # Port 80
